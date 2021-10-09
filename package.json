@@ -1,0 +1,26 @@
+{
+  "name": "electroshop",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Yacine ZITOUNI",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix dlala",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^6.0.10",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13"
+  }
+}
