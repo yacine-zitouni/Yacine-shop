@@ -1,0 +1,47 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .td {
+    @apply p-5 tracking-widest font-serif;
+  }
+
+  .link {
+    @apply text-gray-400 text-sm font-semibold tracking-tight uppercase hover:text-white;
+  }
+  .product-title {
+    @apply text-xl font-normal text-gray-900 leading-normal;
+  }
+
+  .regular-text {
+    @apply leading-relaxed font-light text-gray-700;
+  }
+
+  .btn {
+    @apply text-lg inline-block border text-gray-700 py-1 px-5 border-gray-700;
+  }
+  .subheading {
+    @apply font-bold text-4xl text-gray-500;
+  }
+
+  .heading-2 {
+    @apply text-2xl text-gray-600 font-semibold  leading-tight  uppercase tracking-widest;
+  }
+
+  .heading-1,
+  .h2 {
+    @apply text-2xl md:text-3xl text-heading tracking-widest leading-tight;
+  }
+
+  .loader {
+    @apply bg-gray-300 rounded-md;
+  }
+}
+
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: translate(0) scale(1);
+  visibility: visible;
+}

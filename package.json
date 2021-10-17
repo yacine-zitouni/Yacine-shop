@@ -7,17 +7,21 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm start --prefix dlala",
+    "client": "npm start --prefix frontend",
     "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.10",
+    "react-paypal-button-v2": "^2.6.3",
     "react-redux": "^7.2.5",
-    "redux": "^4.1.1"
+    "redux": "^4.1.1",
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
