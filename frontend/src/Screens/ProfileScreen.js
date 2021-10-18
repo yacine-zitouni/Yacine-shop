@@ -177,9 +177,9 @@ const ProfileScreen = (props) => {
                           </th>
                         </tr>
                       </thead>
-                      <tbody className="bg-white divide-y divide-gray-200">
+                      <tbody className="bg-white divide-y divide-gray-200 text-gray-500">
                         {orders.map((order) => (
-                          <tr className="text-gray-500 text-sm odd:bg-gray-100 ">
+                          <tr className=" hover:bg-gray-200 odd:bg-gray-100 ">
                             <td className="td"> {order._id} </td>
                             <td className="td">
                               {order.createdAt.split("T")[0]}
@@ -201,7 +201,7 @@ const ProfileScreen = (props) => {
                             </td>
                             <td>
                               <Link
-                                className="underline  hover:text-purple-700 text-purple-500"
+                                className="underline  text-blue-500 hover:text-blue-600"
                                 to={`/order/${order._id}`}
                               >
                                 Details

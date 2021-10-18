@@ -107,7 +107,7 @@ const OrderScreen = ({ history, match }) => {
                 </li>
               </ul>
               <div className="border-gray-300">
-                <div className="mt-5 mx-2">
+                <div className="mt-2">
                   <PayPalButton amount={order.totalPrice} />
                 </div>
               </div>

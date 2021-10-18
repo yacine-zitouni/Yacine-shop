@@ -5,7 +5,7 @@
 
 @layer components {
   .td {
-    @apply p-5 tracking-widest font-serif;
+    @apply p-5 tracking-widest text-base font-serif;
   }
 
   .link {

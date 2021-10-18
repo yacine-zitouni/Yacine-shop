@@ -66,8 +66,9 @@ const CartScreen = (props) => {
           <p className="ml-3 tracking-wider  text-lg">$&nbsp;{amount}</p>
           <div className="py-3 lg:px-5 border-t border-gray-400">
             <button
+              disabled={cart.length === 0}
               onClick={onBtnClick}
-              className=" uppercase  text-sm tracking-tighter p-4 w-full text-white bg-gray-900"
+              className=" uppercase disabled:opacity-40 text-sm tracking-tighter p-4 w-full text-white bg-gray-900"
             >
               Procced to checkout
             </button>
