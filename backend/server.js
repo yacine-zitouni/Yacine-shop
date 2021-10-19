@@ -4,7 +4,7 @@ import productRouter from "./routers/productRouter.js";
 import db from "./db.js";
 import userRouter from "./routers/userRouter.js";
 import orderRouter from "./routers/orderRouter.js";
-import path from "path"
+import path from "path";
 
 dotenv.config();
 const app = express();
@@ -13,10 +13,6 @@ app.use(express.json());
 
 app.use("/api/products", productRouter);
 app.use("/api/orders", orderRouter);
-
-app.get("/api", (req, res) => {
-  res.send("Welcome to Yacine Shop APi");
-});
 
 app.get("/api/config/paypal", (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
@@ -28,7 +24,7 @@ const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "frontend/build")));
-  app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html")))
+  app.get("*", (req, res) => res.sendFile("index.html"));
 }
 
 const port = process.env.PORT || 5000;
