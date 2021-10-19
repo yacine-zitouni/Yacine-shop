@@ -4,6 +4,7 @@ import productRouter from "./routers/productRouter.js";
 import db from "./db.js";
 import userRouter from "./routers/userRouter.js";
 import orderRouter from "./routers/orderRouter.js";
+import path from "path"
 
 dotenv.config();
 const app = express();
@@ -22,6 +23,13 @@ app.get("/api/config/paypal", (req, res) =>
 );
 
 app.use("/api/users", userRouter);
+
+const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/build")));
+  app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html")))
+}
 
 const port = process.env.PORT || 5000;
 
