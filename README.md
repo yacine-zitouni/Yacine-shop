@@ -12,7 +12,7 @@ Website url: https://yacine-shop.herokuapp.com/
 - Full featured shopping cart
 - Product reviews and ratings
 - User profile with orders
-- Mark orders as delivered option
+- Carousel for top selling
 - Checkout process (shipping, payment method, etc)
 - PayPal / credit card integration
 - Database seeder (products & users)
