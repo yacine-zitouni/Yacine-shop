@@ -5,7 +5,6 @@
 ![screenshot](https://github.com/Yaciiinee/Yacine-shop/blob/main/uploads/screenshot.png
 )
 
-Website url: https://yacine-shop.herokuapp.com/
 
 ## Features
 
